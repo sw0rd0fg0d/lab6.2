@@ -1,0 +1,12 @@
+gross income = input("gross income: ")	
+number of dependents = input("number of dependents: ")
+gross income = float(gross income)
+number of dependents = float(input("Enter the number of dependents: "))
+tax rate = 0.2
+STANDARD_DEDUCTION = 10000
+DEPENDENT_DEDUCTION = 2000
+dependentDeduction = dependents * DEPENDENT_DEDUCTION
+grossIncomeAfterDeduction = grossincome - (dependentDeduction + STANDARD_DEDUCTION)
+incomeTax = grossIncomeAfterDeduction * TAX_RATE
+grossIcomeAfterTax = grossincome - incomeTax
+print("the income Tax is ", incomeTax, " dollars.")
